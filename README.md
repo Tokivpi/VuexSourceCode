@@ -16,7 +16,7 @@
 
 > **install：**
 >
-> - 保存将通过Vue.use获取到的Vue，并在组件初始化数据前在组件的属性添加**$store**属性，**所有的$store的属性都指向根组件的$store的属性值$options.store**
+> - 保存将通过Vue.use获取到的Vue，并通过Vue.mixin全局混入的方式使组件的属性添加**$store**属性，**所有的$store的属性都指向根组件的$store的属性值$options.store**
 >
 > **index:**
 >
